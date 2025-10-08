@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/BHBCJtNd/tiktok.png",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 1,
+    "description": "The leading destination for short-form mobile videos. It allows users to create and share short, engaging video clips.",
+    "size": 300,
+    "reviews": 1.5,
+    "ratingAvg": 4.5,
+    "downloads": 8.26,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 9200000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Zzkg44F3/Instagram.jpg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "A visual social media platform for sharing photos, short videos (Reels), and stories, and connecting with friends.",
+    "size": 190,
+    "reviews": 2.11,
+    "ratingAvg": 4.6,
+    "downloads": 8.17,
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 13000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/KpfV7sn1/fb.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 3,
+    "description": "The primary social networking service to connect with people, post updates, and engage in groups and events.",
+    "size": 80,
+    "reviews": 1.25,
+    "ratingAvg": 4.0,
+    "downloads": 5.97,
+    "ratings": [
+      { "name": "1 star", "count": 10000000 },
+      { "name": "2 star", "count": 12000000 },
+      { "name": "3 star", "count": 25000000 },
+      { "name": "4 star", "count": 38000000 },
+      { "name": "5 star", "count": 40000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7tTVSXMG/Whats-App-Messenger.png",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 4,
+    "description": "Free, end-to-end encrypted messaging, voice, and video calls for global communication.",
+    "size": 120,
+    "reviews": 7.72,
+    "ratingAvg": 4.5,
+    "downloads": 5.64,
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 4200000 },
+      { "name": "3 star", "count": 8000000 },
+      { "name": "4 star", "count": 18000000 },
+      { "name": "5 star", "count": 44000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HDD6WXP7/Temu.png",
+    "title": "Temu",
+    "companyName": "Pinduoduo",
+    "id": 5,
+    "description": "A fast-growing online shopping marketplace offering products across various categories at low prices.",
+    "size": 180,
+    "reviews": 8.5,
+    "ratingAvg": 4.4,
+    "downloads": 5.16,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 2300000 },
+      { "name": "5 star", "count": 4000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7dYh003w/Telegrams.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 6,
+    "description": "A cloud-based messenger known for security, large group chats, and fast file sharing.",
+    "size": 95,
+    "reviews": 5.5,
+    "ratingAvg": 4.3,
+    "downloads": 4.47,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 2300000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y7zqnpwk/CapCut.png",
+    "title": "CapCut",
+    "companyName": "ByteDance Pte. Ltd.",
+    "id": 7,
+    "description": "A popular mobile video editing app known for its user-friendly interface and rich feature set.",
+    "size": 250,
+    "reviews": 4.0,
+    "ratingAvg": 4.6,
+    "downloads": 4.1,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 2300000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/6RgJ0gDH/Google-Play-Store.jpg",
+    "title": "Google Play Store",
+    "companyName": "Google LLC",
+    "id": 8,
+    "description": "The official app store for Android, offering apps, games, movies, and more.",
+    "size": 50,
+    "reviews": 4.0,
+    "ratingAvg": 4.1,
+    "downloads": 1.0,
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 4000000 },
+      { "name": "3 star", "count": 8000000 },
+      { "name": "4 star", "count": 12000000 },
+      { "name": "5 star", "count": 13000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fGFHsVpz/Threads.png",
+    "title": "Threads",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 9,
+    "description": "A text-based social media platform developed by Meta, linked directly to Instagram accounts.",
+    "size": 100,
+    "reviews": 2.5,
+    "ratingAvg": 4.0,
+    "downloads": 3.26,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 500000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/PZCDv3DC/Whats-App-Business.jpg",
+    "title": "WhatsApp Business",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 10,
+    "description": "An app for small businesses to connect with customers, providing quick tools to automate, sort, and reply to messages.",
+    "size": 130,
+    "reviews": 1.51,
+    "ratingAvg": 4.4,
+    "downloads": 2.94,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 4200000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TDTgGcxb/Messenger.png",
+    "title": "Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 11,
+    "description": "Meta's standalone instant messaging and voice/video calling app.",
+    "size": 90,
+    "reviews": 1.12,
+    "ratingAvg": 4.1,
+    "downloads": 2.89,
+    "ratings": [
+      { "name": "1 star", "count": 8000000 },
+      { "name": "2 star", "count": 10000000 },
+      { "name": "3 star", "count": 22000000 },
+      { "name": "4 star", "count": 30000000 },
+      { "name": "5 star", "count": 30000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Fb3y0R3G/ChatGPT.png",
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "id": 12,
+    "description": "An official mobile interface for the conversational AI chatbot, powered by large language models.",
+    "size": 50,
+    "reviews": 2.56,
+    "ratingAvg": 4.7,
+    "downloads": 2.78,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 75000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 675000 },
+      { "name": "5 star", "count": 1500000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hFZ0JqBr/Spotify.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 13,
+    "description": "A leading music, podcast, and video streaming service providing digital content from artists worldwide.",
+    "size": 150,
+    "reviews": 2.0,
+    "ratingAvg": 4.4,
+    "downloads": 2.62,
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 6000000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LdhCK0dx/YouTube.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 14,
+    "description": "The world's largest video sharing platform, offering a vast library of user-generated and corporate media content.",
+    "size": 160,
+    "reviews": 5.0,
+    "ratingAvg": 4.3,
+    "downloads": 50.0,
+    "ratings": [
+      { "name": "1 star", "count": 15000000 },
+      { "name": "2 star", "count": 18000000 },
+      { "name": "3 star", "count": 27000000 },
+      { "name": "4 star", "count": 40000000 },
+      { "name": "5 star", "count": 50000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zHHSTvtB/SHEIN.jpg",
+    "title": "SHEIN",
+    "companyName": "Roadget Business Pte. Ltd.",
+    "id": 15,
+    "description": "An online fast-fashion and lifestyle retailer known for its wide and frequently updated inventory.",
+    "size": 200,
+    "reviews": 1.8,
+    "ratingAvg": 4.6,
+    "downloads": 2.19,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 2800000 },
+      { "name": "5 star", "count": 5000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fGS3Gs86/Netflix.png",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 16,
+    "description": "A popular streaming service offering a vast library of movies, TV shows, and original content.",
+    "size": 150,
+    "reviews": 1.21,
+    "ratingAvg": 4.4,
+    "downloads": 1.81,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 5500000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/cc3V5tS2/Roblox.jpg",
+    "title": "Roblox",
+    "companyName": "Roblox Corporation",
+    "id": 17,
+    "description": "A massive online platform where users can create, share, and play millions of games and virtual experiences.",
+    "size": 160,
+    "reviews": 1.4,
+    "ratingAvg": 4.5,
+    "downloads": 1.75,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1300000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y4JTGMhy/Subway-Surfers.jpg",
+    "title": "Subway Surfers",
+    "companyName": "Kiloo / SYBO Games",
+    "id": 18,
+    "description": "An endlessly running game where the player must dodge obstacles and collect coins.",
+    "size": 180,
+    "reviews": 5.0,
+    "ratingAvg": 4.6,
+    "downloads": 1.7,
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 2500000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 25500000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fdmrmjvB/App-Store.jpg",
+    "title": "App Store",
+    "companyName": "Apple Inc.",
+    "id": 19,
+    "description": "Discover and download apps, games, and more for your iPhone and iPad devices.",
+    "size": 60,
+    "reviews": 2.57,
+    "ratingAvg": 4.5,
+    "downloads": 6.0,
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 10500000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/s935JmrV/Google.png",
+    "title": "Google",
+    "companyName": "Google LLC",
+    "id": 20,
+    "description": "The official search and personal assistant app from Google, providing quick access to information and tools.",
+    "size": 120,
+    "reviews": 90.0,
+    "ratingAvg": 4.2,
+    "downloads": 16.0,
+    "ratings": [
+      { "name": "1 star", "count": 5000000 },
+      { "name": "2 star", "count": 6000000 },
+      { "name": "3 star", "count": 8000000 },
+      { "name": "4 star", "count": 15000000 },
+      { "name": "5 star", "count": 16000000 }
+    ]
+  }
+]
