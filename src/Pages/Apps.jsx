@@ -8,11 +8,19 @@ const Apps = () => {
   const { id } = useParams();
   const { allApps } = useApps();
   const allAppsId = allApps.find((apps) => String(apps.id) === id);
-  const { image, title, downloads, ratingAvg, companyName, reviews, size } =
-    allAppsId || {};
+  const {
+    image,
+    title,
+    downloads,
+    ratingAvg,
+    companyName,
+    reviews,
+    size,
+    description,
+  } = allAppsId || {};
 
   return (
-    <div>
+    <div className="md:px-20">
       <div className=" bg-white rounded shadow-sm p-4 flex justify-between items-center gap-10 ">
         <figure className="md:h-[350px] h-[390px] overflow-hidden ">
           <img
@@ -60,6 +68,13 @@ const Apps = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div>
+        <h1>Ratings</h1>
+      </div>
+      <div>
+        <h1 className="text-[#001931] font-semibold">Description</h1>
+        <p className="text-justify">{description}</p>
       </div>
     </div>
   );
