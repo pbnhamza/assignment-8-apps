@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const goLink = () => {
-    window.open("https://react-icons.github.io/react-icons/icons/fc/");
+    window.open("https://github.com/pbnhamza/assignment-8-apps");
   };
   return (
     <div>
@@ -53,7 +53,7 @@ const Navbar = () => {
             <NavLink to={"/"}>
               <li className="mr-8 font-semibold hover:text-purple-950">Home</li>
             </NavLink>
-            <NavLink to={"/apps"}>
+            <NavLink to={"/apps/:id"}>
               <li className="mr-8 font-semibold ">Apps</li>
             </NavLink>
 

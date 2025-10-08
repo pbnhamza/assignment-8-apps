@@ -3,7 +3,7 @@ import LayOuts from "../LayOuts/LayOuts";
 import ErrorPage from "../Components/ErrorPage";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
-import Banner from "../Components/Banner";
+import AppsAll from "../Components/AppsAll";
 
 const router = createBrowserRouter([
   {
@@ -16,9 +16,12 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
       },
-
       {
-        path: "/apps",
+        path: "/allApps",
+        Component: AppsAll,
+      },
+      {
+        path: "/apps/:id",
         Component: Apps,
       },
     ],

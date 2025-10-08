@@ -1,10 +1,14 @@
 import { FiDownload } from "react-icons/fi";
 import { IoIosStar } from "react-icons/io";
+import { Link } from "react-router";
 const AppsCard = ({ apps }) => {
-  const { title, image, downloads, ratingAvg } = apps;
+  const { title, image, downloads, ratingAvg, id } = apps;
 
   return (
-    <div className=" ">
+    <Link
+      to={`/apps/${id}`}
+      className=" hover:scale-105  transition ease-in-out "
+    >
       <div className=" bg-white rounded shadow-sm p-4 ">
         <figure className="md:h-[250px] h-[390px] overflow-hidden ">
           <img
@@ -29,7 +33,7 @@ const AppsCard = ({ apps }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
