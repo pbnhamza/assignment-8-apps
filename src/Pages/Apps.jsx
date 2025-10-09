@@ -99,11 +99,11 @@ const Apps = () => {
               onClick={handleInstall}
               disabled={click}
               className={`bg-[#00d390] py-[14px] px-[20px] rounded text-white text-[20px] font-semibold ${
-                click ? "" : "cursor-pointer"
+                click ? "font-bold" : "cursor-pointer"
               }`}
             >
               {click ? (
-                "Install"
+                "Installed"
               ) : (
                 <p>
                   Install Now <span>({size}MB)</span>
