@@ -15,7 +15,10 @@ import { IoIosStar } from "react-icons/io";
 import { TbFileLike } from "react-icons/tb";
 import { toast, ToastContainer } from "react-toastify";
 import AppsNotFound from "../Components/AppsNotFound";
+import { useState } from "react";
 const Apps = () => {
+  const [click, setClick] = useState(false);
+
   const { id } = useParams();
   const { allApps, loading } = useApps();
   const allAppsId = allApps.find((apps) => String(apps.id) === id);
@@ -33,8 +36,8 @@ const Apps = () => {
   } = allAppsId;
 
   const handleInstall = () => {
+    setClick(true);
     const existingList = JSON.parse(localStorage.getItem("install"));
-
     let storedUpdateList = [];
     if (existingList) {
       const isDuplicates = existingList.some((p) => p.id === allAppsId.id);
@@ -44,6 +47,7 @@ const Apps = () => {
       storedUpdateList.push(allAppsId);
     }
     localStorage.setItem("install", JSON.stringify(storedUpdateList));
+
     toast("add apps to Installation page");
   };
 
@@ -93,9 +97,18 @@ const Apps = () => {
           <div className="pt-6">
             <button
               onClick={handleInstall}
-              className="bg-[#00d390] py-[14px] px-[20px] rounded text-white text-[20px] font-semibold"
+              disabled={click}
+              className={`bg-[#00d390] py-[14px] px-[20px] rounded text-white text-[20px] font-semibold ${
+                click ? "" : "cursor-pointer"
+              }`}
             >
-              Install Now <span>({size}MB)</span>
+              {click ? (
+                "Install"
+              ) : (
+                <p>
+                  Install Now <span>({size}MB)</span>
+                </p>
+              )}
             </button>
           </div>
         </div>

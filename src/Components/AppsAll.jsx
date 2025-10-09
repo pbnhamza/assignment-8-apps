@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useApps from "../Hooks/useApps";
 import AppsCard from "../Components/AppsCard";
 import AppsNotFound from "../Components/AppsNotFound";
+import Loader from "./Loader";
 
 const AppsAll = () => {
   const { allApps } = useApps();

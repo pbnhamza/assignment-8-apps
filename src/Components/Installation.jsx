@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
 import { IoIosStar } from "react-icons/io";
-import { TbFileLike } from "react-icons/tb";
 import { toast, ToastContainer } from "react-toastify";
 import AppsNotFound from "./AppsNotFound";
 const Installation = () => {
@@ -88,10 +87,7 @@ const Installation = () => {
                       </p>
                     </div>
                     <div className=" flex justify-center items-center gap-1 font-medium">
-                      <TbFileLike className="text-[#632EE3] h-[20px]" />
-                      <p className="text-[#001931]   text-[16px]">
-                        {p.reviews}K
-                      </p>
+                      <p className="text-[#001931]   text-[16px]">{p.size}MB</p>
                     </div>
                   </div>
                 </div>

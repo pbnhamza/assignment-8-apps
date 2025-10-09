@@ -61,7 +61,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to={"/apps/:id"}
+              to={"/allApps"}
               className={({ isActive }) =>
                 isActive
                   ? "mr-8 font-semibold border-b-2 "
@@ -72,7 +72,7 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-              to={"/install/:id"}
+              to={"/install"}
               className={({ isActive }) =>
                 isActive
                   ? "mr-8 font-semibold border-b-2 "

@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         Component: Apps,
       },
       {
-        path: "/install/:id",
+        path: "/install",
         Component: Installation,
       },
     ],

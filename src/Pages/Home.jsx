@@ -4,7 +4,7 @@ import Banner from "../Components/Banner";
 import useApps from "../Hooks/useApps";
 
 const Home = () => {
-  const { allApps } = useApps();
+  const { allApps, loading } = useApps();
 
   const fetchApps = allApps.slice(0, 8);
 
