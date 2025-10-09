@@ -50,15 +50,36 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <NavLink to={"/"}>
-              <li className="mr-8 font-semibold hover:text-purple-950">Home</li>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                isActive
+                  ? "mr-8 font-semibold border-b-2 "
+                  : "mr-8 font-semibold"
+              }
+            >
+              Home
             </NavLink>
-            <NavLink to={"/apps/:id"}>
-              <li className="mr-8 font-semibold ">Apps</li>
+            <NavLink
+              to={"/apps/:id"}
+              className={({ isActive }) =>
+                isActive
+                  ? "mr-8 font-semibold border-b-2 "
+                  : "mr-8 font-semibold"
+              }
+            >
+              Apps
             </NavLink>
 
-            <NavLink to={"/install/:id"}>
-              <li className="mr-8 font-semibold">Installation</li>
+            <NavLink
+              to={"/install/:id"}
+              className={({ isActive }) =>
+                isActive
+                  ? "mr-8 font-semibold border-b-2 "
+                  : "mr-8 font-semibold"
+              }
+            >
+              Installation
             </NavLink>
           </ul>
         </div>

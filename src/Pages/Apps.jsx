@@ -1,9 +1,20 @@
-import React from "react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { FiDownload } from "react-icons/fi";
 import { IoIosStar } from "react-icons/io";
 import { TbFileLike } from "react-icons/tb";
+import { toast, ToastContainer } from "react-toastify";
+import AppsNotFound from "../Components/AppsNotFound";
 const Apps = () => {
   const { id } = useParams();
   const { allApps, loading } = useApps();
@@ -18,7 +29,8 @@ const Apps = () => {
     reviews,
     size,
     description,
-  } = allAppsId || {};
+    ratings,
+  } = allAppsId;
 
   const handleInstall = () => {
     const existingList = JSON.parse(localStorage.getItem("install"));
@@ -26,12 +38,13 @@ const Apps = () => {
     let storedUpdateList = [];
     if (existingList) {
       const isDuplicates = existingList.some((p) => p.id === allAppsId.id);
-      if (isDuplicates) return alert("add hobe na vai");
+      if (isDuplicates) return toast("Already ths Apps Exist ");
       storedUpdateList = [...existingList, allAppsId];
     } else {
       storedUpdateList.push(allAppsId);
     }
     localStorage.setItem("install", JSON.stringify(storedUpdateList));
+    toast("add apps to Installation page");
   };
 
   return (
@@ -88,12 +101,37 @@ const Apps = () => {
         </div>
       </div>
       <div className="px-4">
-        <h1 className="text-[#001931] font-semibold">Ratings</h1>
+        <h1 className="text-[#001931] font-semibold py-6">Ratings</h1>
+        <div className="h-80">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart layout="vertical" data={ratings} barSize={40}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis type="number" />
+              <YAxis
+                reversed
+                dataKey="name"
+                type="category"
+                scale="point"
+                padding={{ left: 10, right: 10 }}
+                axisLine={false}
+                tickLine={false}
+              />
+
+              <Tooltip />
+              <Bar
+                dataKey="count"
+                fill="#ff8811"
+                background={{ fill: "#eee" }}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
       <div className="px-4">
-        <h1 className="text-[#001931] font-semibold">Description</h1>
-        <p className="text-justify text-[#627382]">{description}</p>
+        <h1 className="text-[#001931] font-semibold mt-4 ">Description</h1>
+        <p className="text-justify text-[#627382] py-4 ">{description}</p>
       </div>
+      <ToastContainer />
     </div>
   );
 };
