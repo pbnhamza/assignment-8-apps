@@ -3,7 +3,6 @@ import useApps from "../Hooks/useApps";
 import AppsCard from "../Components/AppsCard";
 import AppsNotFound from "../Components/AppsNotFound";
 import Loader from "./Loader";
-import { PropagateLoader } from "react-spinners";
 
 const AppsAll = () => {
   const { allApps, loading } = useApps();

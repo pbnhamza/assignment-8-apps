@@ -5,9 +5,9 @@ const Footer = () => {
     <div className=" bg-[#001931] md:px-20">
       <footer className="footer sm:footer-horizontal text-neutral-content p-10">
         <aside>
-          <img className="w-[50px] h-[50]" src={logo} alt="" />
+          <img className="w-[50px] h-[50]" src={logo} alt="image" />
           <p>
-            HERO.IO Ltd.
+            APPS HERO Ltd.
             <br />
             Providing reliable tech since 1992
           </p>
@@ -54,8 +54,8 @@ const Footer = () => {
       <div className="footer sm:footer-horizontal footer-center  text-base-content p-4">
         <aside>
           <p className="text-white">
-            Copyright © {new Date().getFullYear()} - All right reserved by
-            HERO.IO
+            Copyright © {new Date().getFullYear()} - All right reserved by APPS
+            HERO
           </p>
         </aside>
       </div>

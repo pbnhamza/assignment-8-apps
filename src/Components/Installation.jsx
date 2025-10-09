@@ -37,7 +37,7 @@ const Installation = () => {
       {loading ? (
         <Loader></Loader>
       ) : (
-        <div className="md:p-20">
+        <div className="md:p-20 bg-gray-200">
           <ToastContainer />
           <div className=" ">
             <h1 className="text-5xl font-semibold text-center">
@@ -69,7 +69,7 @@ const Installation = () => {
             </div>
             <div>
               {sortSize.map((p, index) => (
-                <div key={index} className="py-2">
+                <div key={index} className="py-1">
                   <div className="flex justify-between items-center p-4 rounded gap-6 border-1 border-gray-200 bg-[#ffffff] shadow ">
                     <figure className="w-[80px] h-[80px] overflow-hidden ">
                       <img

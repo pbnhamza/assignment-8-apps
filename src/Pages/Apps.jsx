@@ -52,9 +52,9 @@ const Apps = () => {
   };
 
   return (
-    <div className="md:px-20">
+    <div className="md:px-20 ">
       <div className=" bg-white   shadow-sm p-4  md:flex md:justify-between items-center gap-10  ">
-        <figure className="md:h-[350px] h-[390px] overflow-hidden ">
+        <figure className="md:h-[350px] h-[300px] overflow-hidden ">
           <img
             className="w-full h-full object-cover rounded "
             src={image}
@@ -72,21 +72,21 @@ const Apps = () => {
           </div>
           <hr className="text-gray-300 " />
           <div className="flex flex-col md:flex-row  justify-items-start gap-6 mt-4 ">
-            <div className="space-y-2 ml-6">
+            <div className="space-y-2 md:ml-6">
               <FiDownload className="text-[#00d390] w-[40px] h-[40px]" />
               <p className="text-[#001931]">Downloads</p>
               <p className="text-[#001931]  font-extrabold text-[40px]">
                 {downloads}M
               </p>
             </div>
-            <div className="space-y-2 ml-6">
+            <div className="space-y-2 md:ml-6">
               <IoIosStar className="text-[#FF8811] w-[40px] h-[40px]" />
               <p>Average Ratings</p>
               <p className="text-[#001931]  font-extrabold text-[40px]">
                 {ratingAvg}
               </p>
             </div>
-            <div className="space-y-2 ml-6">
+            <div className="space-y-2 md:ml-6">
               <TbFileLike className="text-[#632EE3] w-[40px] h-[40px]" />
               <p>Total Reviews</p>
               <p className="text-[#001931]  font-extrabold text-[40px]">
@@ -113,7 +113,7 @@ const Apps = () => {
           </div>
         </div>
       </div>
-      <div className="px-4">
+      <div className="md:px-5">
         <h1 className="text-[#001931] font-semibold py-6">Ratings</h1>
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
@@ -142,7 +142,7 @@ const Apps = () => {
       </div>
       <div className="px-4">
         <h1 className="text-[#001931] font-semibold mt-4 ">Description</h1>
-        <p className="text-justify text-[#627382] py-4 ">{description}</p>
+        <p className="text-justify text-[#627382] py-4 px-4 ">{description}</p>
       </div>
       <ToastContainer />
     </div>
