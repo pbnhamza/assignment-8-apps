@@ -57,7 +57,9 @@ const Navbar = () => {
               <li className="mr-8 font-semibold ">Apps</li>
             </NavLink>
 
-            <li className="mr-8 font-semibold">Installation</li>
+            <NavLink to={"/install/:id"}>
+              <li className="mr-8 font-semibold">Installation</li>
+            </NavLink>
           </ul>
         </div>
         <div className="navbar-end">
