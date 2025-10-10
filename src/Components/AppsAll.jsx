@@ -14,16 +14,18 @@ const AppsAll = () => {
     ? allApps.filter((apps) => apps.title.toLowerCase().includes(searchTrim))
     : allApps;
 
-  const [loadingSearch, setLoadingSearch] = useState(false);
+  const [loadingItems, setLoadingItems] = useState(false);
   useEffect(() => {
-    if (searchTrim.length > 0) {
-      setLoadingSearch(true);
-      const loader = setTimeout(() => setLoadingSearch(false), 3000);
-      return () => clearTimeout(loader);
+    let loaderPage;
+    if (search.trim().length > 0) {
+      setLoadingItems(true);
+
+      loaderPage = setTimeout(() => setLoadingItems(false), 300);
+      return () => clearTimeout(loaderPage);
     } else {
-      setLoadingSearch(false);
+      setLoadingItems(false);
     }
-  }, [searchTrim]);
+  }, [search]);
 
   return (
     <div className="">
@@ -57,7 +59,7 @@ const AppsAll = () => {
             </div>
           </div>
           <div>
-            {loadingSearch.length ? (
+            {loadingItems ? (
               <Loader></Loader>
             ) : (
               <div>
