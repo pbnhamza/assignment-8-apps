@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useApps from "../Hooks/useApps";
 import AppsCard from "../Components/AppsCard";
 import AppsNotFound from "../Components/AppsNotFound";
@@ -6,13 +6,24 @@ import Loader from "./Loader";
 
 const AppsAll = () => {
   const { allApps, loading } = useApps();
-
   const [search, setSearch] = useState("");
+
   const searchTrim = search.trim().toLowerCase();
 
   const searchApps = searchTrim
     ? allApps.filter((apps) => apps.title.toLowerCase().includes(searchTrim))
     : allApps;
+
+  const [loadingSearch, setLoadingSearch] = useState(false);
+  useEffect(() => {
+    if (searchTrim.length > 0) {
+      setLoadingSearch(true);
+      const loader = setTimeout(() => setLoadingSearch(false), 3000);
+      return () => clearTimeout(loader);
+    } else {
+      setLoadingSearch(false);
+    }
+  }, [searchTrim]);
 
   return (
     <div className="">
@@ -45,21 +56,23 @@ const AppsAll = () => {
               </label>
             </div>
           </div>
-          {loading ? (
-            <Loader></Loader>
-          ) : (
-            <div>
-              {searchApps.length ? (
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2 ">
-                  {searchApps.map((apps) => (
-                    <AppsCard key={apps.id} apps={apps}></AppsCard>
-                  ))}
-                </div>
-              ) : (
-                <AppsNotFound></AppsNotFound>
-              )}
-            </div>
-          )}
+          <div>
+            {loadingSearch.length ? (
+              <Loader></Loader>
+            ) : (
+              <div>
+                {searchApps.length > 0 ? (
+                  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2 ">
+                    {searchApps.map((apps) => (
+                      <AppsCard key={apps.id} apps={apps}></AppsCard>
+                    ))}
+                  </div>
+                ) : (
+                  <AppsNotFound></AppsNotFound>
+                )}
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>

@@ -75,7 +75,7 @@ const Installation = () => {
                       <img
                         className="w-full h-full object-cover rounded "
                         src={p.image}
-                        alt="#"
+                        alt="image"
                       />
                     </figure>
 

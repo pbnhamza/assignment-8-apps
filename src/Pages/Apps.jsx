@@ -16,13 +16,14 @@ import { TbFileLike } from "react-icons/tb";
 import { toast, ToastContainer } from "react-toastify";
 import AppsNotFound from "../Components/AppsNotFound";
 import { useState } from "react";
+import Loader from "../Components/Loader";
 const Apps = () => {
   const [click, setClick] = useState(false);
 
   const { id } = useParams();
   const { allApps, loading } = useApps();
   const allAppsId = allApps.find((apps) => String(apps.id) === id);
-  if (loading) return <p>loading.......</p>;
+  if (loading) return <Loader></Loader>;
   const {
     image,
     title,

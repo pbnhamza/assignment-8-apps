@@ -14,7 +14,7 @@ const AppsCard = ({ apps }) => {
           <img
             className="w-full h-full object-cover rounded "
             src={image}
-            alt=""
+            alt="image"
           />
         </figure>
         <div className=" ">

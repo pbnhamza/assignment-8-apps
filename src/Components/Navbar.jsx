@@ -32,11 +32,37 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <NavLink to={"/"}>
-                <li className="mr-8">Home</li>
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "mr-8 text-pink-500 font-semibold  "
+                    : "mr-8 font-semibold"
+                }
+              >
+                Home
               </NavLink>
-              <li className="mr-8">Apps</li>
-              <li className="mr-8">Installation</li>
+              <NavLink
+                to={"/allApps"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "mr-8 text-pink-500 font-semibold "
+                    : "mr-8 font-semibold"
+                }
+              >
+                Apps
+              </NavLink>
+
+              <NavLink
+                to={"/install"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "mr-8 text-pink-500 font-semibold "
+                    : "mr-8 font-semibold"
+                }
+              >
+                Installation
+              </NavLink>
             </ul>
           </div>
           <div>
@@ -70,7 +96,6 @@ const Navbar = () => {
             >
               Apps
             </NavLink>
-
             <NavLink
               to={"/install"}
               className={({ isActive }) =>
