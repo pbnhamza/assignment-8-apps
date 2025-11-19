@@ -51,8 +51,10 @@ The application is built using React and styled with Tailwind CSS & DaisyUI for 
   "daisyui": "^4.x"
 }
 
-## 🔗 Live Link
+## 🌐 Live Site URL
 
--👉 Live Demo: https://assiginment-8-apps-hero.netlify.app/allApps
+[https://your-live-site-link-here.com](https://heartfelt-figolla-eec98b.netlify.app/)
 
+*(Replace this with your actual link)*
 
+---
