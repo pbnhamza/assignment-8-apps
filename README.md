@@ -4,7 +4,13 @@ APPS HERO is a fully responsive web application that helps users track and manag
 It provides a clean UI, smooth interactions, and an intuitive workflow for daily task management.
 
 ---
+## 🌐 Live Site URL
 
+[https://your-live-site-link-here.com](https://heartfelt-figolla-eec98b.netlify.app/)
+
+*(Replace this with your actual link)*
+
+---
 
 ## 📚 Overview
 APPS HERO is designed to make task management simple and effective.  
@@ -51,10 +57,4 @@ The application is built using React and styled with Tailwind CSS & DaisyUI for 
   "daisyui": "^4.x"
 }
 
-## 🌐 Live Site URL
 
-[https://your-live-site-link-here.com](https://heartfelt-figolla-eec98b.netlify.app/)
-
-*(Replace this with your actual link)*
-
----
