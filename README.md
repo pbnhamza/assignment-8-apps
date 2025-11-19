@@ -6,7 +6,7 @@ It provides a clean UI, smooth interactions, and an intuitive workflow for daily
 ---
 ## 🌐 Live Site URL
 
-[https://your-live-site-link-here.com](https://heartfelt-figolla-eec98b.netlify.app/)
+[https://your-live-site-link-here.com](https://assiginment-8-apps-hero.netlify.app/allApps)
 
 *(Replace this with your actual link)*
 
