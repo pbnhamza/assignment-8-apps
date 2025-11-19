@@ -50,3 +50,8 @@ The application is built using React and styled with Tailwind CSS & DaisyUI for 
   "tailwindcss": "^3.x",
   "daisyui": "^4.x"
 }
+🔗 Live Link
+
+👉 Live Demo: https://your-live-link-here.com
+
+
